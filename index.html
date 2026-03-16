@@ -54,9 +54,8 @@
             <ul class="hidden md:flex items-center gap-8 font-semibold text-sm">
                 <li><a href="#home" class="hover:text-dsYellow transition-colors">Beranda</a></li>
                 <li><a href="#about" class="hover:text-dsYellow transition-colors">Profil</a></li>
-                <li><a href="#divisi" class="hover:text-dsYellow transition-colors">Divisi</a></li>
+                <li><a href="#divisi" class="hover:text-dsYellow transition-colors">Divisi & Galeri</a></li>
                 <li><a href="#pengurus" class="hover:text-dsYellow transition-colors">Pengurus</a></li>
-                <li><a href="#galeri" class="hover:text-dsYellow transition-colors">Galeri</a></li>
                 <li><a href="#kontak" class="bg-dsYellow text-white px-6 py-2.5 rounded-full hover:bg-yellow-500 hover:-translate-y-1 transition-all shadow-lg shadow-yellow-500/30">Kontak</a></li>
             </ul>
 
@@ -67,18 +66,17 @@
             </button>
         </nav>
 
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-xl py-6 flex flex-col items-center gap-5 font-semibold transition-all">
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-xl py-6 flex flex-col items-center gap-5 font-semibold transition-all z-40">
             <a href="#home" class="mobile-link hover:text-dsYellow">Beranda</a>
             <a href="#about" class="mobile-link hover:text-dsYellow">Profil</a>
-            <a href="#divisi" class="mobile-link hover:text-dsYellow">Divisi</a>
+            <a href="#divisi" class="mobile-link hover:text-dsYellow">Divisi & Galeri</a>
             <a href="#pengurus" class="mobile-link hover:text-dsYellow">Pengurus</a>
-            <a href="#galeri" class="mobile-link hover:text-dsYellow">Galeri</a>
             <a href="#kontak" class="mobile-link text-dsYellow">Kontak</a>
         </div>
     </header>
 
     <main>
-        <section id="home" class="pt-24 pb-12 px-4 max-w-7xl mx-auto">
+        <section id="home" class="pt-24 pb-12 px-4 max-w-7xl mx-auto scroll-mt-24">
             <div class="relative bg-[url('https://images.unsplash.com/photo-1514525253361-bee8718a7439?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center bg-fixed min-h-[75vh] rounded-[2rem] flex items-center justify-center text-center overflow-hidden shadow-2xl">
                 <div class="absolute inset-0 bg-black/70"></div>
                 <div class="relative z-10 px-6 max-w-4xl">
@@ -96,7 +94,7 @@
             </div>
         </section>
 
-        <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+        <section id="about" class="py-24 px-6 max-w-7xl mx-auto scroll-mt-24">
             <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
                 <div data-aos="fade-right" class="w-full md:w-1/2">
                     <span class="text-dsYellow font-bold tracking-widest uppercase text-sm mb-2 block">Sejak 2004</span>
@@ -123,53 +121,108 @@
             </div>
         </section>
 
-        <section id="divisi" class="py-24 px-6 max-w-7xl mx-auto">
+        <section id="divisi" class="py-24 px-6 max-w-7xl mx-auto scroll-mt-24">
             <div data-aos="fade-up" class="text-center mb-16">
-                <span class="text-dsYellow font-bold tracking-widest uppercase text-sm mb-2 block">Eksplorasi Bakat</span>
+                <span class="text-dsYellow font-bold tracking-widest uppercase text-sm mb-2 block">Eksplorasi & Mahakarya</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">5 Pilar Kreativitas Dapur Seni</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Dari nada hingga manajemen, kami meracik ide menjadi karya nyata.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Klik pada kartu divisi di bawah ini untuk melihat rekam jejak dan hasil karya mereka.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div data-aos="fade-up" data-aos-delay="0" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 border-b-4 border-transparent hover:border-dsYellow">
+            <div class="flex justify-center mb-10" data-aos="fade-up">
+                <button data-filter="all" class="divisi-btn px-8 py-3 rounded-full border-2 border-dsBlue bg-white text-dsBlue font-bold hover:bg-dsBlue hover:text-white transition-colors shadow-lg">
+                    Tampilkan Semua Karya
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                <div data-aos="fade-up" data-aos-delay="0" data-filter="musik" class="divisi-btn cursor-pointer group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-transparent">
                     <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=600&auto=format&fit=crop" alt="Musik" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
                     <div class="p-8">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Dapur Musik</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-dsYellow transition-colors">Dapur Musik</h3>
                         <p class="text-gray-600 text-sm leading-relaxed">Eksperimen nada dan harmoni. Kami mengeksplorasi berbagai genre, dari akustik hingga komposisi digital.</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="150" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 border-b-4 border-transparent hover:border-dsRed">
+                
+                <div data-aos="fade-up" data-aos-delay="150" data-filter="desain" class="divisi-btn cursor-pointer group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-transparent">
                     <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=600&auto=format&fit=crop" alt="Desain" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
                     <div class="p-8">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Visual Art & Desain</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-dsRed transition-colors">Visual Art & Desain</h3>
                         <p class="text-gray-600 text-sm leading-relaxed">Goresan pixel dan warna. Menyatukan seni murni dengan komunikasi visual, membangun identitas Dapur Seni.</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="300" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 border-b-4 border-transparent hover:border-dsBlue">
+                
+                <div data-aos="fade-up" data-aos-delay="300" data-filter="sinematografi" class="divisi-btn cursor-pointer group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-transparent">
                     <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=600&auto=format&fit=crop" alt="Sinematografi" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
                     <div class="p-8">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Sinematografi</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-dsBlue transition-colors">Sinematografi</h3>
                         <p class="text-gray-600 text-sm leading-relaxed">Menangkap momen dan cerita. Melalui lensa kamera, kami merangkai visual dan narasi menjadi film pendek.</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="450" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 border-b-4 border-transparent hover:border-dsYellow">
+                
+                <div data-aos="fade-up" data-aos-delay="450" data-filter="labstudio" class="divisi-btn cursor-pointer group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-transparent">
                     <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=600&auto=format&fit=crop" alt="Labstudio" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
                     <div class="p-8">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Labstudio</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-dsYellow transition-colors">Labstudio</h3>
                         <p class="text-gray-600 text-sm leading-relaxed">Pusat eksperimen visual & tata suara. Tempat kami mengolah teknik recording, mixing, dan lighting pementasan.</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="600" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 border-b-4 border-transparent hover:border-dsRed lg:col-start-2">
+                
+                <div data-aos="fade-up" data-aos-delay="600" data-filter="manajemen" class="divisi-btn cursor-pointer group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-transparent lg:col-start-2">
                     <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop" alt="Manajemen" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"></div>
                     <div class="p-8">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Manajemen</h3>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-dsRed transition-colors">Manajemen</h3>
                         <p class="text-gray-600 text-sm leading-relaxed">Otak di balik layar. Mengelola pementasan, pameran, dan operasional. Memastikan karya sampai ke publik.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="galeri" class="hidden pt-10 border-t-2 border-gray-200 scroll-mt-24 transition-all duration-500">
+                <div class="flex items-center gap-4 mb-10">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-800">Galeri <span id="judul-galeri" class="text-dsBlue">Semua Divisi</span></h3>
+                    <div class="flex-1 h-px bg-gray-300"></div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="gallery-grid">
+                    <div data-aos="zoom-in" class="group relative rounded-2xl overflow-hidden h-64 shadow-md cursor-pointer gallery-item musik">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop" alt="Musik" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="text-dsYellow font-bold text-lg">Panggung Akustik FST</h4>
+                            <span class="text-gray-300 text-sm">Dapur Musik</span>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in" class="group relative rounded-2xl overflow-hidden h-64 shadow-md cursor-pointer gallery-item desain">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=800&auto=format&fit=crop" alt="Desain" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="text-dsYellow font-bold text-lg">Pameran Visual Art</h4>
+                            <span class="text-gray-300 text-sm">Dapur Desain</span>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in" class="group relative rounded-2xl overflow-hidden h-64 shadow-md cursor-pointer gallery-item sinematografi">
+                        <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800&auto=format&fit=crop" alt="Sinema" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="text-dsYellow font-bold text-lg">Syuting Film Pendek</h4>
+                            <span class="text-gray-300 text-sm">Sinematografi</span>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in" class="group relative rounded-2xl overflow-hidden h-64 shadow-md cursor-pointer gallery-item labstudio">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop" alt="Lab" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="text-dsYellow font-bold text-lg">Recording Session</h4>
+                            <span class="text-gray-300 text-sm">Labstudio</span>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in" class="group relative rounded-2xl overflow-hidden h-64 shadow-md cursor-pointer gallery-item manajemen">
+                        <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=800&auto=format&fit=crop" alt="Manajemen" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="text-dsYellow font-bold text-lg">Evaluasi Program Kerja</h4>
+                            <span class="text-gray-300 text-sm">Manajemen</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="pengurus" class="py-24 px-6 max-w-7xl mx-auto">
+        <section id="pengurus" class="py-24 px-6 max-w-7xl mx-auto scroll-mt-24">
             <div data-aos="fade-up" class="text-center mb-16">
                 <span class="text-dsYellow font-bold tracking-widest uppercase text-sm mb-2 block">Struktur Organisasi</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pengurus Aktif 2026</h2>
@@ -288,61 +341,7 @@
             </div>
         </section>
 
-        <section id="galeri" class="py-24 px-6 max-w-7xl mx-auto">
-            <div data-aos="fade-up" class="text-center mb-12">
-                <span class="text-dsYellow font-bold tracking-widest uppercase text-sm mb-2 block">Rekam Jejak</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Galeri & Mahakarya</h2>
-            </div>
-
-            <div data-aos="fade-up" data-aos-delay="100" class="flex flex-wrap justify-center gap-3 mb-12" id="filter-btns">
-                <button class="filter-btn active px-6 py-2 rounded-full border-2 border-dsBlue bg-dsBlue text-white font-semibold hover:bg-dsBlue hover:text-white transition-colors" data-filter="all">Semua</button>
-                <button class="filter-btn px-6 py-2 rounded-full border-2 border-dsBlue text-dsBlue font-semibold hover:bg-dsBlue hover:text-white transition-colors" data-filter="musik">Musik</button>
-                <button class="filter-btn px-6 py-2 rounded-full border-2 border-dsBlue text-dsBlue font-semibold hover:bg-dsBlue hover:text-white transition-colors" data-filter="desain">Desain</button>
-                <button class="filter-btn px-6 py-2 rounded-full border-2 border-dsBlue text-dsBlue font-semibold hover:bg-dsBlue hover:text-white transition-colors" data-filter="sinematografi">Sinematografi</button>
-                <button class="filter-btn px-6 py-2 rounded-full border-2 border-dsBlue text-dsBlue font-semibold hover:bg-dsBlue hover:text-white transition-colors" data-filter="labstudio">Labstudio</button>
-                <button class="filter-btn px-6 py-2 rounded-full border-2 border-dsBlue text-dsBlue font-semibold hover:bg-dsBlue hover:text-white transition-colors" data-filter="manajemen">Manajemen</button>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="gallery-grid">
-                <div data-aos="zoom-in" data-aos-delay="0" class="group relative rounded-2xl overflow-hidden h-64 shadow-md cursor-pointer gallery-item musik">
-                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop" alt="Musik" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <h4 class="text-dsYellow font-bold text-lg">Panggung Akustik FST</h4>
-                        <span class="text-gray-300 text-sm">Dapur Musik</span>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-delay="150" class="group relative rounded-2xl overflow-hidden h-64 shadow-md cursor-pointer gallery-item desain">
-                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=800&auto=format&fit=crop" alt="Desain" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <h4 class="text-dsYellow font-bold text-lg">Pameran Visual Art</h4>
-                        <span class="text-gray-300 text-sm">Dapur Desain</span>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-delay="300" class="group relative rounded-2xl overflow-hidden h-64 shadow-md cursor-pointer gallery-item sinematografi">
-                    <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800&auto=format&fit=crop" alt="Sinema" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <h4 class="text-dsYellow font-bold text-lg">Syuting Film Pendek</h4>
-                        <span class="text-gray-300 text-sm">Sinematografi</span>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-delay="450" class="group relative rounded-2xl overflow-hidden h-64 shadow-md cursor-pointer gallery-item labstudio">
-                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop" alt="Lab" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <h4 class="text-dsYellow font-bold text-lg">Recording Session</h4>
-                        <span class="text-gray-300 text-sm">Labstudio</span>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-delay="600" class="group relative rounded-2xl overflow-hidden h-64 shadow-md cursor-pointer gallery-item manajemen">
-                    <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=800&auto=format&fit=crop" alt="Manajemen" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <h4 class="text-dsYellow font-bold text-lg">Evaluasi Program Kerja</h4>
-                        <span class="text-gray-300 text-sm">Manajemen</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="kontak" class="py-24 px-6 max-w-4xl mx-auto">
+        <section id="kontak" class="py-24 px-6 max-w-4xl mx-auto scroll-mt-24">
             <div data-aos="fade-up" class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Punya Ide Gila? Mari Bicara!</h2>
                 <p class="text-gray-600">Pintu "Dapur" kami selalu terbuka untuk kolaborasi.</p>
@@ -371,10 +370,11 @@
     </main>
 
     <footer data-aos="fade-up" class="bg-dsDark text-white py-12 text-center border-t-4 border-dsYellow">
-        <div class="max-w-4xl mx-auto px-6">
+        <div class="max-w-4xl mx-auto px-6 flex flex-col items-center">
+            <img src="LOGO DS.png" alt="Logo Dapur Seni" class="h-16 mb-6 brightness-0 invert drop-shadow-md">
             <h2 class="text-2xl font-bold mb-2">Dapur Seni FST</h2>
             <p class="text-gray-400 text-sm mb-8">Wadah kreativitas mahasiswa FST UIN Jakarta.</p>
-            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between text-xs text-gray-500">
+            <div class="w-full border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between text-xs text-gray-500">
                 <p>&copy; 2026 Dapur Seni FST UIN Jakarta.</p>
                 <p>Designed with passion using Tailwind CSS.</p>
             </div>
@@ -407,32 +407,78 @@
             });
         });
 
-        // Script Filter Galeri
-        const filterBtns = document.querySelectorAll('.filter-btn');
+        // Script Interaksi Divisi -> Galeri (DENGAN FITUR UNCLICK/TOGGLE)
+        const divisiBtns = document.querySelectorAll('.divisi-btn');
         const galleryItems = document.querySelectorAll('.gallery-item');
+        const judulGaleri = document.getElementById('judul-galeri');
+        const galeriSection = document.getElementById('galeri');
 
-        filterBtns.forEach(btn => {
+        const namaDivisiMap = {
+            'all': 'Semua Divisi',
+            'musik': 'Dapur Musik',
+            'desain': 'Visual Art & Desain',
+            'sinematografi': 'Sinematografi',
+            'labstudio': 'Labstudio',
+            'manajemen': 'Manajemen'
+        };
+
+        divisiBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                filterBtns.forEach(b => {
-                    b.classList.remove('bg-dsBlue', 'text-white');
-                    b.classList.add('text-dsBlue', 'bg-transparent');
-                });
-                
-                btn.classList.remove('text-dsBlue', 'bg-transparent');
-                btn.classList.add('bg-dsBlue', 'text-white');
+                // Cek apakah tombol yang diklik ini SUDAH AKTIF sebelumnya
+                const isAlreadyActive = btn.classList.contains('ring-4');
 
-                const filterValue = btn.getAttribute('data-filter');
-
-                galleryItems.forEach(item => {
-                    if (filterValue === 'all' || item.classList.contains(filterValue)) {
-                        item.classList.remove('hidden');
-                    } else {
-                        item.classList.add('hidden');
+                if (isAlreadyActive) {
+                    // JIKA DI-UNCLICK: Matikan warna aktif & Sembunyikan galeri
+                    btn.classList.remove('border-dsBlue', 'ring-4', 'ring-blue-100');
+                    if (btn.getAttribute('data-filter') === 'all') {
+                        btn.classList.remove('bg-dsBlue', 'text-white');
+                        btn.classList.add('bg-white', 'text-dsBlue');
                     }
-                });
-                
-                // Refresh AOS setelah galeri difilter agar animasi rapi
-                setTimeout(() => AOS.refresh(), 100);
+                    
+                    // Sembunyikan bagian galeri secara perlahan
+                    galeriSection.classList.add('hidden');
+                    
+                } else {
+                    // JIKA DIKLIK KARTU BARU: Munculkan galeri & jalankan filter
+
+                    // Hapus class hidden agar galeri muncul
+                    galeriSection.classList.remove('hidden');
+
+                    // Reset semua kartu agar tidak ada yang menyala
+                    divisiBtns.forEach(b => {
+                        b.classList.remove('border-dsBlue', 'ring-4', 'ring-blue-100');
+                        if (b.getAttribute('data-filter') === 'all') {
+                            b.classList.remove('bg-dsBlue', 'text-white');
+                            b.classList.add('bg-white', 'text-dsBlue');
+                        }
+                    });
+                    
+                    // Nyalakan kartu yang baru saja diklik
+                    btn.classList.add('border-dsBlue', 'ring-4', 'ring-blue-100');
+                    if (btn.getAttribute('data-filter') === 'all') {
+                        btn.classList.remove('bg-white', 'text-dsBlue');
+                        btn.classList.add('bg-dsBlue', 'text-white');
+                    }
+
+                    // Ganti Judul
+                    const filterValue = btn.getAttribute('data-filter');
+                    judulGaleri.textContent = namaDivisiMap[filterValue];
+
+                    // Filter Foto-foto
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.classList.remove('hidden');
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    });
+                    
+                    // Scroll halus ke galeri
+                    galeriSection.scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Refresh AOS
+                    setTimeout(() => AOS.refresh(), 100);
+                }
             });
         });
     </script>
