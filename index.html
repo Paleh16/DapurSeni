@@ -41,38 +41,47 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased overflow-x-hidden">
 
-    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
-        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <img src="LOGO DS.jpg" alt="Logo Dapur Seni" class="h-12 rounded-lg">
-                <div class="flex flex-col font-bold lowercase leading-tight">
-                    <span class="text-dsRed text-lg">dapur</span>
-                    <span class="text-dsBlue text-lg">seni</span>
+  <header class="pointer-events-none">
+        <div class="fixed top-6 left-6 z-50 pointer-events-auto">
+            <a href="#home" class="flex items-center gap-3 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all border border-gray-100">
+                <img src="LOGO DS.jpg" alt="Logo Dapur Seni" class="h-8 rounded-full">
+                <div class="flex font-bold lowercase leading-none tracking-tight">
+                    <span class="text-red-600 text-sm">dapur</span>
+                    <span class="text-blue-600 text-sm">seni</span>
                 </div>
-            </div>
+            </a>
+        </div>
 
-            <ul class="hidden md:flex items-center gap-8 font-semibold text-sm">
-                <li><a href="#home" class="hover:text-dsYellow transition-colors">Beranda</a></li>
-                <li><a href="#about" class="hover:text-dsYellow transition-colors">Profil</a></li>
-                <li><a href="#divisi" class="hover:text-dsYellow transition-colors">Divisi & Galeri</a></li>
-                <li><a href="#pengurus" class="hover:text-dsYellow transition-colors">Pengurus</a></li>
-                <li><a href="#kontak" class="bg-dsYellow text-white px-6 py-2.5 rounded-full hover:bg-yellow-500 hover:-translate-y-1 transition-all shadow-lg shadow-yellow-500/30">Kontak</a></li>
-            </ul>
-
-            <button id="hamburger" class="md:hidden flex flex-col gap-[5px] cursor-pointer z-50">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+        <nav class="hidden md:flex pointer-events-auto fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-white/90 backdrop-blur-md shadow-xl border border-gray-100 px-8 py-3 rounded-full items-center gap-10 transition-all">
+            <a href="#home" class="group relative text-gray-400 hover:text-dsMustard transition-all hover:scale-110">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">Beranda</span>
+            </a>
+            <a href="#about" class="group relative text-gray-400 hover:text-dsMaroon transition-all hover:scale-110">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">Profil</span>
+            </a>
+            <a href="#divisi" class="group relative text-gray-400 hover:text-dsTeal transition-all hover:scale-110">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg>
+                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity w-max">Divisi & Galeri</span>
+            </a>
+            <a href="#pengurus" class="group relative text-gray-400 hover:text-dsMustard transition-all hover:scale-110">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">Pengurus</span>
+            </a>
+            <a href="#kontak" class="group relative text-gray-400 hover:text-dsMaroon transition-all hover:scale-110">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">Kontak</span>
+            </a>
         </nav>
 
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-xl py-6 flex flex-col items-center gap-5 font-semibold transition-all z-40">
-            <a href="#home" class="mobile-link hover:text-dsYellow">Beranda</a>
-            <a href="#about" class="mobile-link hover:text-dsYellow">Profil</a>
-            <a href="#divisi" class="mobile-link hover:text-dsYellow">Divisi & Galeri</a>
-            <a href="#pengurus" class="mobile-link hover:text-dsYellow">Pengurus</a>
-            <a href="#kontak" class="mobile-link text-dsYellow">Kontak</a>
-        </div>
+        <nav class="md:hidden pointer-events-auto fixed bottom-6 left-6 right-6 z-50 bg-white/90 backdrop-blur-md shadow-2xl border border-gray-100 px-6 py-4 rounded-3xl flex justify-between items-center">
+            <a href="#home" class="text-gray-400 hover:text-dsMustard transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></a>
+            <a href="#about" class="text-gray-400 hover:text-dsMaroon transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></a>
+            <a href="#divisi" class="text-gray-400 hover:text-dsTeal transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg></a>
+            <a href="#pengurus" class="text-gray-400 hover:text-dsMustard transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></a>
+            <a href="#kontak" class="text-gray-400 hover:text-dsMaroon transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></a>
+        </nav>
     </header>
 
     <main>
