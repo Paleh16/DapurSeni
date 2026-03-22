@@ -2,7 +2,7 @@
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Dapur Seni FST UIN Jakarta</title>
     
     <link rel="icon" type="image/png" href="LOGO DS FIX.png">
@@ -24,11 +24,12 @@
         }
     </script>
     <style>
+        /* Sembunyikan scrollbar tapi tetap bisa di-scroll secara horizontal */
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
-<body class="bg-[#FCF8F1] text-gray-800 font-sans antialiased overflow-x-hidden">
+<body class="bg-[#FCF8F1] text-gray-800 font-sans antialiased overflow-x-hidden w-full relative">
 
     <header class="pointer-events-none">
         <div class="fixed top-6 left-6 z-40 pointer-events-auto">
@@ -41,35 +42,36 @@
         </div>
 
         <nav class="hidden md:flex pointer-events-auto fixed top-6 left-1/2 -translate-x-1/2 z-40 bg-white/90 backdrop-blur-md shadow-xl border border-gray-100 px-8 py-3 rounded-full items-center gap-10 transition-all">
-            <a href="#home" class="group relative text-dsMustard transition-all hover:scale-110">
+            <a href="#home" class="group relative text-dsMustard transition-all scale-110">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Beranda</span>
+                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">Beranda</span>
             </a>
             <a href="profil.html" class="group relative text-gray-400 hover:text-dsMaroon transition-all hover:scale-110">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Profil</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.601a8.983 8.983 0 013.361-6.866 8.281 8.281 0 003 2.48z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"></path></svg>
+                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">Profil</span>
             </a>
             <a href="Art_Gallery.html" class="group relative text-gray-400 hover:text-dsTeal transition-all hover:scale-110">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                 <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity w-max">Divisi & Galeri</span>
             </a>
             <a href="#kontak" class="group relative text-gray-400 hover:text-dsMaroon transition-all hover:scale-110">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Kontak</span>
+                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">Kontak</span>
             </a>
         </nav>
 
-        <nav class="md:hidden pointer-events-auto fixed bottom-6 left-6 right-6 z-40 bg-white/90 backdrop-blur-md shadow-2xl border border-gray-100 px-6 py-4 rounded-3xl flex justify-between items-center">
-            <a href="#home" class="text-dsMustard"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></a>
-            <a href="profil.html" class="text-gray-400 hover:text-dsMaroon"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></a>
-            <a href="Art_Gallery.html" class="text-gray-400 hover:text-dsTeal"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg></a>
-            <a href="#kontak" class="text-gray-400 hover:text-dsMaroon"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></a>
+        <nav class="md:hidden pointer-events-auto fixed bottom-6 left-4 right-4 z-40 bg-white/90 backdrop-blur-md shadow-2xl border border-gray-100 px-8 py-5 rounded-[2rem] flex justify-between items-center">
+            <a href="#home" class="text-dsMustard hover:scale-110 transition-transform"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></a>
+            <a href="profil.html" class="text-gray-400 hover:text-dsMaroon hover:scale-110 transition-transform"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></a>
+            <a href="Art_Gallery.html" class="text-gray-400 hover:text-dsTeal hover:scale-110 transition-transform"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg></a>
+            <a href="#kontak" class="text-gray-400 hover:text-dsMaroon hover:scale-110 transition-transform"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></a>
         </nav>
     </header>
-    
-   <section id="home" class="pt-24 pb-12 px-4 max-w-7xl mx-auto scroll-mt-24">
-            <div class="relative h-[55vh] md:h-auto md:min-h-[75vh] rounded-[2rem] flex items-center justify-center text-center overflow-hidden shadow-2xl border-4 border-dsMustard bg-dsDark">
-                <div id="hero-slider" class="absolute inset-0 z-0">
+
+    <main>
+        <section id="home" class="pt-24 pb-12 px-4 max-w-7xl mx-auto scroll-mt-24">
+            <div class="relative h-[60vh] md:h-auto md:min-h-[75vh] rounded-[2rem] flex items-center justify-center text-center overflow-hidden shadow-2xl border-4 border-dsMustard bg-dsDark w-full">
+                <div id="hero-slider" class="absolute inset-0 z-0 w-full h-full">
                     <div class="hero-slide absolute inset-0 bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out opacity-100" style="background-image: url('https://images.unsplash.com/photo-1514525253361-bee8718a7439?q=80&w=2000&auto=format&fit=crop');"></div>
                     <div class="hero-slide absolute inset-0 bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2000&auto=format&fit=crop');"></div>
                     <div class="hero-slide absolute inset-0 bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=2000&auto=format&fit=crop');"></div>
@@ -77,12 +79,12 @@
                     <div class="hero-slide absolute inset-0 bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2000&auto=format&fit=crop');"></div>
                     <div class="hero-slide absolute inset-0 bg-cover bg-center md:bg-fixed transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2000&auto=format&fit=crop');"></div>
                 </div>
-                <div class="absolute inset-0 bg-black/70 z-10"></div>
-                <div class="relative z-20 px-6 max-w-4xl">
+                <div class="absolute inset-0 bg-black/70 z-10 w-full h-full"></div>
+                <div class="relative z-20 px-6 max-w-4xl w-full">
                     <h1 data-aos="fade-up" class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4 md:mb-6 tracking-wide drop-shadow-2xl">
                         Mengekspresikan Seni di Tengah <span class="text-dsMustard">Teknologi</span>
                     </h1>
-                    <p data-aos="fade-up" data-aos-delay="150" class="text-sm md:text-xl text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto font-medium">
+                    <p data-aos="fade-up" data-aos-delay="150" class="text-sm sm:text-base md:text-xl text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto font-medium">
                         Wadah kreativitas mahasiswa Fakultas Sains dan Teknologi UIN Jakarta sejak 2004.
                     </p>
                     <div data-aos="zoom-in" data-aos-delay="300" class="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
@@ -94,7 +96,6 @@
         </section>
 
         <section id="preview" class="py-16 px-4 max-w-7xl mx-auto border-b-2 border-gray-100">
-            
             <div data-aos="fade-up" class="text-center mb-24 max-w-4xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 uppercase mb-8">Profil Dapur Seni</h2>
                 <div class="w-24 h-1 bg-dsMaroon mx-auto mb-10"></div>
@@ -113,42 +114,42 @@
             <div class="relative w-full overflow-hidden mb-24">
                 <div id="pengurus-slider" class="flex overflow-x-auto hide-scrollbar gap-6 pb-8 pt-4 px-4 cursor-grab active:cursor-grabbing w-full">
                     
-                    <a href="profil.html#bph" class="shrink-0 w-[80vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
+                    <a href="profil.html#bph" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
                         <div class="w-14 h-14 bg-dsMustard rounded-full flex items-center justify-center text-white mb-6 pointer-events-none"><svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></div>
                         <h4 class="text-xl font-bold text-dsDark transition-colors mb-2 pointer-events-none whitespace-nowrap">BPH</h4>
                         <p class="text-gray-500 text-sm leading-relaxed mb-4 pointer-events-none">Badan Pengurus Harian</p>
                         <span class="mt-auto text-xs font-bold text-dsMustard pointer-events-none">Lihat Pengurus &rarr;</span>
                     </a>
                     
-                    <a href="profil.html#musik" class="shrink-0 w-[80vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
+                    <a href="profil.html#musik" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
                         <div class="w-14 h-14 bg-dsMaroon rounded-full flex items-center justify-center text-white mb-6 pointer-events-none"><svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg></div>
                         <h4 class="text-xl font-bold text-dsDark transition-colors mb-2 pointer-events-none whitespace-nowrap">Dapur Musik</h4>
                         <p class="text-gray-500 text-sm leading-relaxed mb-4 pointer-events-none">Vokal & Instrumen</p>
                         <span class="mt-auto text-xs font-bold text-dsMaroon pointer-events-none">Lihat Pengurus &rarr;</span>
                     </a>
 
-                    <a href="profil.html#desain" class="shrink-0 w-[80vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
+                    <a href="profil.html#desain" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
                         <div class="w-14 h-14 bg-dsTeal rounded-full flex items-center justify-center text-white mb-6 pointer-events-none"><svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
                         <h4 class="text-xl font-bold text-dsDark transition-colors mb-2 pointer-events-none whitespace-nowrap">Dapur Desain</h4>
                         <p class="text-gray-500 text-sm leading-relaxed mb-4 pointer-events-none">Ilustrasi & Digital Imaging</p>
                         <span class="mt-auto text-xs font-bold text-dsTeal pointer-events-none">Lihat Pengurus &rarr;</span>
                     </a>
 
-                    <a href="profil.html#sinematografi" class="shrink-0 w-[80vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
+                    <a href="profil.html#sinematografi" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
                         <div class="w-14 h-14 bg-gray-600 rounded-full flex items-center justify-center text-white mb-6 pointer-events-none"><svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg></div>
                         <h4 class="text-xl font-bold text-dsDark transition-colors mb-2 pointer-events-none whitespace-nowrap">Sinematografi</h4>
                         <p class="text-gray-500 text-sm leading-relaxed mb-4 pointer-events-none">Video Editing & Directing</p>
                         <span class="mt-auto text-xs font-bold text-gray-600 pointer-events-none">Lihat Pengurus &rarr;</span>
                     </a>
 
-                    <a href="profil.html#labstudio" class="shrink-0 w-[80vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
+                    <a href="profil.html#labstudio" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
                         <div class="w-14 h-14 bg-gray-400 rounded-full flex items-center justify-center text-white mb-6 pointer-events-none"><svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg></div>
                         <h4 class="text-xl font-bold text-dsDark transition-colors mb-2 pointer-events-none whitespace-nowrap">Labstudio</h4>
                         <p class="text-gray-500 text-sm leading-relaxed mb-4 pointer-events-none">Pusat eksperimen visual & tata suara.</p>
                         <span class="mt-auto text-xs font-bold text-gray-400 pointer-events-none">Lihat Pengurus &rarr;</span>
                     </a>
 
-                    <a href="profil.html#manajemen" class="shrink-0 w-[80vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
+                    <a href="profil.html#manajemen" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
                         <div class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center text-white mb-6 pointer-events-none"><svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div>
                         <h4 class="text-xl font-bold text-dsDark transition-colors mb-2 pointer-events-none whitespace-nowrap">Manajemen</h4>
                         <p class="text-gray-500 text-sm leading-relaxed mb-4 pointer-events-none">Organisasi & Operasional</p>
@@ -156,37 +157,42 @@
                     </a>
 
 
-                    <a href="profil.html#bph" class="shrink-0 w-[80vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
+                    <a href="profil.html#bph" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
                         <div class="w-14 h-14 bg-dsMustard rounded-full flex items-center justify-center text-white mb-6 pointer-events-none"><svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></div>
                         <h4 class="text-xl font-bold text-dsDark transition-colors mb-2 pointer-events-none whitespace-nowrap">BPH</h4>
                         <p class="text-gray-500 text-sm leading-relaxed mb-4 pointer-events-none">Badan Pengurus Harian</p>
                         <span class="mt-auto text-xs font-bold text-dsMustard pointer-events-none">Lihat Pengurus &rarr;</span>
                     </a>
-                    <a href="profil.html#musik" class="shrink-0 w-[80vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
+                    
+                    <a href="profil.html#musik" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
                         <div class="w-14 h-14 bg-dsMaroon rounded-full flex items-center justify-center text-white mb-6 pointer-events-none"><svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg></div>
                         <h4 class="text-xl font-bold text-dsDark transition-colors mb-2 pointer-events-none whitespace-nowrap">Dapur Musik</h4>
                         <p class="text-gray-500 text-sm leading-relaxed mb-4 pointer-events-none">Vokal & Instrumen</p>
                         <span class="mt-auto text-xs font-bold text-dsMaroon pointer-events-none">Lihat Pengurus &rarr;</span>
                     </a>
-                    <a href="profil.html#desain" class="shrink-0 w-[80vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
+
+                    <a href="profil.html#desain" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
                         <div class="w-14 h-14 bg-dsTeal rounded-full flex items-center justify-center text-white mb-6 pointer-events-none"><svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
                         <h4 class="text-xl font-bold text-dsDark transition-colors mb-2 pointer-events-none whitespace-nowrap">Dapur Desain</h4>
                         <p class="text-gray-500 text-sm leading-relaxed mb-4 pointer-events-none">Ilustrasi & Digital Imaging</p>
                         <span class="mt-auto text-xs font-bold text-dsTeal pointer-events-none">Lihat Pengurus &rarr;</span>
                     </a>
-                    <a href="profil.html#sinematografi" class="shrink-0 w-[80vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
+
+                    <a href="profil.html#sinematografi" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
                         <div class="w-14 h-14 bg-gray-600 rounded-full flex items-center justify-center text-white mb-6 pointer-events-none"><svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg></div>
                         <h4 class="text-xl font-bold text-dsDark transition-colors mb-2 pointer-events-none whitespace-nowrap">Sinematografi</h4>
                         <p class="text-gray-500 text-sm leading-relaxed mb-4 pointer-events-none">Video Editing & Directing</p>
                         <span class="mt-auto text-xs font-bold text-gray-600 pointer-events-none">Lihat Pengurus &rarr;</span>
                     </a>
-                    <a href="profil.html#labstudio" class="shrink-0 w-[80vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
+
+                    <a href="profil.html#labstudio" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
                         <div class="w-14 h-14 bg-gray-400 rounded-full flex items-center justify-center text-white mb-6 pointer-events-none"><svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg></div>
                         <h4 class="text-xl font-bold text-dsDark transition-colors mb-2 pointer-events-none whitespace-nowrap">Labstudio</h4>
                         <p class="text-gray-500 text-sm leading-relaxed mb-4 pointer-events-none">Pusat eksperimen visual & tata suara.</p>
                         <span class="mt-auto text-xs font-bold text-gray-400 pointer-events-none">Lihat Pengurus &rarr;</span>
                     </a>
-                    <a href="profil.html#manajemen" class="shrink-0 w-[80vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
+
+                    <a href="profil.html#manajemen" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[320px] bg-white p-8 rounded-[2.5rem] shadow-md border border-gray-100 flex flex-col hover:shadow-2xl transition-all duration-300 select-none block">
                         <div class="w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center text-white mb-6 pointer-events-none"><svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div>
                         <h4 class="text-xl font-bold text-dsDark transition-colors mb-2 pointer-events-none whitespace-nowrap">Manajemen</h4>
                         <p class="text-gray-500 text-sm leading-relaxed mb-4 pointer-events-none">Organisasi & Operasional</p>
@@ -205,87 +211,85 @@
             <div class="relative w-full overflow-hidden mb-10 group">
                 <div id="galeri-slider" class="flex overflow-x-auto hide-scrollbar gap-6 pb-8 pt-4 px-4 cursor-grab active:cursor-grabbing w-full">
                     
-                    <div data-src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1600" data-title="Panggung Harmoni" data-category="Musik" class="shrink-0 w-[80vw] md:w-[400px] h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
+                    <div data-src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1600" data-title="Panggung Harmoni" data-category="Musik" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[400px] h-[250px] md:h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
                         <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 pointer-events-none">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-8 pointer-events-none border-l-4 border-dsMustard">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6 md:p-8 pointer-events-none border-l-4 border-dsMustard">
                             <span class="text-dsMustard font-bold text-xs uppercase mb-1 tracking-widest">Musik</span>
-                            <h3 class="text-white font-bold text-xl leading-tight">Panggung Harmoni</h3>
+                            <h3 class="text-white font-bold text-lg md:text-xl leading-tight">Panggung Harmoni</h3>
                         </div>
                     </div>
                     
-                    <div data-src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=1600" data-title="Karya Kanvas Digital" data-category="Visual Art" class="shrink-0 w-[80vw] md:w-[400px] h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
+                    <div data-src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=1600" data-title="Karya Kanvas Digital" data-category="Visual Art" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[400px] h-[250px] md:h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
                         <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 pointer-events-none">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-8 pointer-events-none border-l-4 border-dsMaroon">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6 md:p-8 pointer-events-none border-l-4 border-dsMaroon">
                             <span class="text-dsMaroon font-bold text-xs uppercase mb-1 tracking-widest">Visual Art</span>
-                            <h3 class="text-white font-bold text-xl leading-tight">Karya Kanvas Digital</h3>
+                            <h3 class="text-white font-bold text-lg md:text-xl leading-tight">Karya Kanvas Digital</h3>
                         </div>
                     </div>
 
-                    <div data-src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=1600" data-title="Behind the Scenes Film" data-category="Sinematografi" class="shrink-0 w-[80vw] md:w-[400px] h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
+                    <div data-src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=1600" data-title="Behind the Scenes Film" data-category="Sinematografi" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[400px] h-[250px] md:h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
                         <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 pointer-events-none">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-8 pointer-events-none border-l-4 border-dsTeal">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6 md:p-8 pointer-events-none border-l-4 border-dsTeal">
                             <span class="text-dsTeal font-bold text-xs uppercase mb-1 tracking-widest">Sinematografi</span>
-                            <h3 class="text-white font-bold text-xl leading-tight">Behind the Scenes Film</h3>
+                            <h3 class="text-white font-bold text-lg md:text-xl leading-tight">Behind the Scenes Film</h3>
                         </div>
                     </div>
 
-                    <div data-src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1600" data-title="Sesi Rekaman & Mixing" data-category="Labstudio" class="shrink-0 w-[80vw] md:w-[400px] h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
+                    <div data-src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1600" data-title="Sesi Rekaman & Mixing" data-category="Labstudio" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[400px] h-[250px] md:h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
                         <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 pointer-events-none">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-8 pointer-events-none border-l-4 border-gray-400">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6 md:p-8 pointer-events-none border-l-4 border-gray-400">
                             <span class="text-gray-300 font-bold text-xs uppercase mb-1 tracking-widest">Labstudio</span>
-                            <h3 class="text-white font-bold text-xl leading-tight">Sesi Rekaman & Mixing</h3>
+                            <h3 class="text-white font-bold text-lg md:text-xl leading-tight">Sesi Rekaman & Mixing</h3>
                         </div>
                     </div>
 
-                    <div data-src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=1600" data-title="Rapat Produksi Teater" data-category="Manajemen" class="shrink-0 w-[80vw] md:w-[400px] h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
+                    <div data-src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=1600" data-title="Rapat Produksi Teater" data-category="Manajemen" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[400px] h-[250px] md:h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
                         <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 pointer-events-none">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-8 pointer-events-none border-l-4 border-gray-800">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6 md:p-8 pointer-events-none border-l-4 border-gray-800">
                             <span class="text-gray-400 font-bold text-xs uppercase mb-1 tracking-widest">Manajemen</span>
-                            <h3 class="text-white font-bold text-xl leading-tight">Rapat Produksi Teater</h3>
+                            <h3 class="text-white font-bold text-lg md:text-xl leading-tight">Rapat Produksi Teater</h3>
                         </div>
                     </div>
 
-
-                    <div data-src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1600" data-title="Panggung Harmoni" data-category="Musik" class="shrink-0 w-[80vw] md:w-[400px] h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
+                    <div data-src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1600" data-title="Panggung Harmoni" data-category="Musik" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[400px] h-[250px] md:h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
                         <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 pointer-events-none">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-8 pointer-events-none border-l-4 border-dsMustard">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6 md:p-8 pointer-events-none border-l-4 border-dsMustard">
                             <span class="text-dsMustard font-bold text-xs uppercase mb-1 tracking-widest">Musik</span>
-                            <h3 class="text-white font-bold text-xl leading-tight">Panggung Harmoni</h3>
+                            <h3 class="text-white font-bold text-lg md:text-xl leading-tight">Panggung Harmoni</h3>
                         </div>
                     </div>
                     
-                    <div data-src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=1600" data-title="Karya Kanvas Digital" data-category="Visual Art" class="shrink-0 w-[80vw] md:w-[400px] h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
+                    <div data-src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=1600" data-title="Karya Kanvas Digital" data-category="Visual Art" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[400px] h-[250px] md:h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
                         <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 pointer-events-none">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-8 pointer-events-none border-l-4 border-dsMaroon">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6 md:p-8 pointer-events-none border-l-4 border-dsMaroon">
                             <span class="text-dsMaroon font-bold text-xs uppercase mb-1 tracking-widest">Visual Art</span>
-                            <h3 class="text-white font-bold text-xl leading-tight">Karya Kanvas Digital</h3>
+                            <h3 class="text-white font-bold text-lg md:text-xl leading-tight">Karya Kanvas Digital</h3>
                         </div>
                     </div>
 
-                    <div data-src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=1600" data-title="Behind the Scenes Film" data-category="Sinematografi" class="shrink-0 w-[80vw] md:w-[400px] h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
+                    <div data-src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=1600" data-title="Behind the Scenes Film" data-category="Sinematografi" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[400px] h-[250px] md:h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
                         <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 pointer-events-none">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-8 pointer-events-none border-l-4 border-dsTeal">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6 md:p-8 pointer-events-none border-l-4 border-dsTeal">
                             <span class="text-dsTeal font-bold text-xs uppercase mb-1 tracking-widest">Sinematografi</span>
-                            <h3 class="text-white font-bold text-xl leading-tight">Behind the Scenes Film</h3>
+                            <h3 class="text-white font-bold text-lg md:text-xl leading-tight">Behind the Scenes Film</h3>
                         </div>
                     </div>
 
-                    <div data-src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1600" data-title="Sesi Rekaman & Mixing" data-category="Labstudio" class="shrink-0 w-[80vw] md:w-[400px] h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
+                    <div data-src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1600" data-title="Sesi Rekaman & Mixing" data-category="Labstudio" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[400px] h-[250px] md:h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
                         <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 pointer-events-none">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-8 pointer-events-none border-l-4 border-gray-400">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6 md:p-8 pointer-events-none border-l-4 border-gray-400">
                             <span class="text-gray-300 font-bold text-xs uppercase mb-1 tracking-widest">Labstudio</span>
-                            <h3 class="text-white font-bold text-xl leading-tight">Sesi Rekaman & Mixing</h3>
+                            <h3 class="text-white font-bold text-lg md:text-xl leading-tight">Sesi Rekaman & Mixing</h3>
                         </div>
                     </div>
 
-                    <div data-src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=1600" data-title="Rapat Produksi Teater" data-category="Manajemen" class="shrink-0 w-[80vw] md:w-[400px] h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
+                    <div data-src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=1600" data-title="Rapat Produksi Teater" data-category="Manajemen" class="shrink-0 w-[85vw] sm:w-[60vw] md:w-[400px] h-[250px] md:h-[300px] relative rounded-[2.5rem] overflow-hidden shadow-md group-hover:shadow-2xl transition-all duration-300 select-none block cursor-pointer gallery-item-trigger">
                         <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 pointer-events-none">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-8 pointer-events-none border-l-4 border-gray-800">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6 md:p-8 pointer-events-none border-l-4 border-gray-800">
                             <span class="text-gray-400 font-bold text-xs uppercase mb-1 tracking-widest">Manajemen</span>
-                            <h3 class="text-white font-bold text-xl leading-tight">Rapat Produksi Teater</h3>
+                            <h3 class="text-white font-bold text-lg md:text-xl leading-tight">Rapat Produksi Teater</h3>
                         </div>
                     </div>
-
                 </div>
             </div>
             <p class="text-xs text-gray-400 mt-2 tracking-widest uppercase font-bold text-center">(Geser untuk melihat, Klik foto untuk memperbesar karya)</p>
@@ -300,12 +304,12 @@
                 <div data-aos="fade-right" class="pt-4">
                     <h3 class="text-2xl font-bold mb-8 text-gray-900 leading-none">Get in Touch</h3>
                     <div class="space-y-8 mb-12">
-                        <div class="pl-5 border-l-4 border-gray-200 hover:border-dsTeal transition-colors leading-tight"><h4 class="text-gray-500 text-[11px] font-bold tracking-widest uppercase mb-1">Email Resmi</h4><a href="mailto:dapursenifstuinjkt@gmail.com" class="text-lg font-bold text-gray-900 hover:text-dsTeal transition-colors">dapursenifstuinjkt@gmail.com</a></div>
+                        <div class="pl-5 border-l-4 border-gray-200 hover:border-dsTeal transition-colors leading-tight"><h4 class="text-gray-500 text-[11px] font-bold tracking-widest uppercase mb-1">Email Resmi</h4><a href="mailto:dapursenifstuinjkt@gmail.com" class="text-lg font-bold text-gray-900 hover:text-dsTeal transition-colors break-all">dapursenifstuinjkt@gmail.com</a></div>
                         <div class="pl-5 border-l-4 border-gray-200 hover:border-green-500 transition-colors leading-tight"><h4 class="text-gray-500 text-[11px] font-bold tracking-widest uppercase mb-1">WhatsApp / Phone</h4><p class="text-lg font-bold text-gray-900">+62 812-XXXX-XXXX</p></div>
                         <div class="pl-5 border-l-4 border-gray-200 hover:border-dsMustard transition-colors leading-tight"><h4 class="text-gray-500 text-[11px] font-bold tracking-widest uppercase mb-1">Location</h4><p class="text-lg font-bold text-gray-900">Tangerang Selatan, Banten</p><p class="text-sm text-gray-600 mt-1">Fakultas Sains dan Teknologi<br>UIN Syarif Hidayatullah Jakarta</p></div>
                     </div>
                 </div>
-                <div data-aos="fade-left" class="bg-white p-10 rounded-3xl shadow-lg border-t-4 border-dsTeal relative overflow-hidden">
+                <div data-aos="fade-left" class="bg-white p-8 md:p-10 rounded-3xl shadow-lg border-t-4 border-dsTeal relative overflow-hidden">
                     <h3 class="text-2xl font-bold mb-8 text-gray-900 leading-none">Send Message</h3>
                     <form action="https://api.web3forms.com/submit" method="POST" class="space-y-8">
                         <input type="hidden" name="access_key" value="PASTE_KODE_ACCESS_KEY_DI_SINI">
@@ -323,7 +327,7 @@
         </section>
     </main>
 
-    <footer data-aos="fade-up" class="bg-dsDark text-white py-12 text-center border-t-4 border-dsMustard">
+    <footer data-aos="fade-up" class="bg-dsDark text-white py-12 text-center border-t-4 border-dsMustard pb-24 md:pb-12">
         <div class="max-w-4xl mx-auto px-6 flex flex-col items-center">
             <img src="LOGO DS FIX.png" alt="Logo Dapur Seni" class="h-16 mb-6 brightness-0 invert opacity-80 drop-shadow-md">
             <h2 class="text-2xl font-bold mb-2 leading-none whitespace-nowrap">Dapur Seni FST</h2>
@@ -337,26 +341,26 @@
 
     <div id="lightbox" class="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 md:p-10 transition-opacity duration-300 opacity-0 hidden" style="backdrop-filter: blur(8px);">
         <div id="lightbox-overlay" class="absolute inset-0 bg-black/90 cursor-pointer"></div>
-        <div class="relative z-10 max-w-6xl mx-auto w-full max-h-full flex flex-col items-center gap-6" id="lightbox-content">
-            <button id="lightbox-close" class="absolute -top-4 -right-4 md:top-2 md:right-2 z-20 bg-white/10 hover:bg-dsMaroon text-white p-3 rounded-full transition-colors backdrop-blur-sm shadow-xl">
+        <div class="relative z-10 max-w-6xl mx-auto w-full max-h-full flex flex-col items-center gap-4 md:gap-6" id="lightbox-content">
+            <button id="lightbox-close" class="absolute -top-12 md:-top-4 -right-2 md:right-2 z-20 bg-white/10 hover:bg-dsMaroon text-white p-3 rounded-full transition-colors backdrop-blur-sm shadow-xl">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
             
-            <div class="relative w-full max-w-5xl h-[50vh] sm:h-[60vh] md:h-[70vh] rounded-[2.5rem] overflow-hidden flex items-center justify-center group shadow-2xl border-4 border-white">
+            <div class="relative w-full max-w-5xl h-[50vh] sm:h-[60vh] md:h-[70vh] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden flex items-center justify-center group shadow-2xl border-2 md:border-4 border-white">
                 <img id="lightbox-img" src="" alt="Karya Seni" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none"></div>
 
-                <button id="lightbox-prev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white text-gray-900 p-4 rounded-full transition-all backdrop-blur-md opacity-0 group-hover:opacity-100 shadow-lg scale-90 group-hover:scale-100">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                <button id="lightbox-prev" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white text-gray-900 p-3 md:p-4 rounded-full transition-all backdrop-blur-md opacity-100 md:opacity-0 md:group-hover:opacity-100 shadow-lg scale-90 group-hover:scale-100">
+                    <svg class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
                 </button>
-                <button id="lightbox-next" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white text-gray-900 p-4 rounded-full transition-all backdrop-blur-md opacity-0 group-hover:opacity-100 shadow-lg scale-90 group-hover:scale-100">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19l7-7-7-7"></path></svg>
+                <button id="lightbox-next" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white text-gray-900 p-3 md:p-4 rounded-full transition-all backdrop-blur-md opacity-100 md:opacity-0 md:group-hover:opacity-100 shadow-lg scale-90 group-hover:scale-100">
+                    <svg class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19l7-7-7-7"></path></svg>
                 </button>
             </div>
             
-            <div class="text-center bg-white/10 backdrop-blur-md p-6 rounded-3xl w-max max-w-lg border border-white/20 shadow-xl">
-                <span id="lightbox-category" class="text-dsMustard font-bold text-sm uppercase mb-1 tracking-widest block leading-none">Kategori</span>
-                <h3 id="lightbox-title" class="text-white font-extrabold text-2xl leading-tight">Judul Karya</h3>
+            <div class="text-center bg-white/10 backdrop-blur-md p-4 md:p-6 rounded-2xl md:rounded-3xl w-max max-w-lg border border-white/20 shadow-xl">
+                <span id="lightbox-category" class="text-dsMustard font-bold text-xs md:text-sm uppercase mb-1 tracking-widest block leading-none">Kategori</span>
+                <h3 id="lightbox-title" class="text-white font-extrabold text-lg md:text-2xl leading-tight">Judul Karya</h3>
             </div>
         </div>
     </div>
@@ -365,6 +369,7 @@
     <script>
         AOS.init({ duration: 800, once: true, offset: 50 });
 
+        // CROSSFADE HERO IMAGES
         document.addEventListener('DOMContentLoaded', () => {
             const slides = document.querySelectorAll('.hero-slide');
             let currentSlide = 0;
@@ -380,7 +385,7 @@
         });
 
         /* ======================================================== */
-        /* SCRIPT DRAG & SMOOTH AUTO-SCROLL (DIPERBAIKI) */
+        /* SCRIPT DRAG & SMOOTH AUTO-SCROLL LOOP */
         /* ======================================================== */
         function initDragSlider(sliderId) {
             const slider = document.getElementById(sliderId);
@@ -392,7 +397,7 @@
             let startX;
             let scrollLeft;
             let animationId;
-            let frameCount = 0; // PENAMBAHAN: Untuk mengontrol kecepatan loop dengan presisi
+            let frameCount = 0; 
 
             slider.addEventListener('mousedown', (e) => {
                 isDown = true;
@@ -430,6 +435,7 @@
                 slider.scrollLeft = scrollLeft - walk;
             });
 
+            // Touch events mobile
             slider.addEventListener('touchstart', () => { isHovered = true; isDragging = false; });
             slider.addEventListener('touchmove', () => { isDragging = true; });
             slider.addEventListener('touchend', () => { isHovered = false; autoScroll(); });
@@ -437,11 +443,8 @@
             function autoScroll() {
                 if (!isDown && !isHovered) {
                     frameCount++;
-                    // PENAMBAHAN: Update scroll hanya setiap 2 frame (bikin jalan santai tapi mulus)
                     if (frameCount % 2 === 0) {
                         slider.scrollLeft += 1;
-                        
-                        // Deteksi setengah jalan untuk reset loop
                         if (slider.scrollLeft >= (slider.scrollWidth / 2) - 2) {
                             slider.scrollLeft = 0;
                         }
@@ -451,16 +454,16 @@
             }
             
             autoScroll();
-
             return () => isDragging;
         }
 
-        const isDraggingPengurus = initDragSlider('pengurus-slider');
+        // Jalankan slider
+        initDragSlider('pengurus-slider');
         const isDraggingGallery = initDragSlider('galeri-slider');
 
 
         /* ======================================================== */
-        /* SCRIPT LIGHTBOX PREVIEW ART GALLERY */
+        /* SCRIPT LIGHTBOX (KLIK GAMBAR FULLSCREEN) */
         /* ======================================================== */
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
@@ -471,6 +474,7 @@
         let galleryPlaylist = [];
         let currentPlaylistIndex = 0;
 
+        // Ambil data gambar dari HTML
         triggers.forEach((trigger, index) => {
             galleryPlaylist.push({
                 src: trigger.getAttribute('data-src'),
@@ -479,6 +483,7 @@
             });
 
             trigger.addEventListener('click', (e) => {
+                // Cegah klik kalau cuma lagi nge-drag
                 if (isDraggingGallery && isDraggingGallery()) {
                     e.preventDefault();
                     return; 
@@ -500,9 +505,7 @@
                 lightboxImg.src = currentItem.src;
                 lightboxTitle.textContent = currentItem.title;
                 lightboxCategory.textContent = currentItem.category;
-                
-                lightboxCategory.className = `text-sm uppercase mb-1 tracking-widest block font-bold leading-none ${getDivisiColor(currentItem.category)}`;
-                
+                lightboxCategory.className = `text-xs md:text-sm uppercase mb-1 tracking-widest block font-bold leading-none ${getDivisiColor(currentItem.category)}`;
                 lightboxImg.onload = () => lightboxImg.style.opacity = '1';
             }, 150);
         }
@@ -520,17 +523,13 @@
         function openLightbox() {
             lightbox.classList.remove('hidden');
             document.body.style.overflow = 'hidden'; 
-            setTimeout(() => {
-                lightbox.classList.remove('opacity-0');
-            }, 10);
+            setTimeout(() => { lightbox.classList.remove('opacity-0'); }, 10);
         }
 
         function closeLightbox() {
             lightbox.classList.add('opacity-0');
             document.body.style.overflow = ''; 
-            setTimeout(() => {
-                lightbox.classList.add('hidden');
-            }, 300);
+            setTimeout(() => { lightbox.classList.add('hidden'); }, 300);
         }
 
         function changeImage(direction) {
@@ -547,7 +546,6 @@
 
         document.addEventListener('keydown', (e) => {
             if (lightbox.classList.contains('hidden')) return; 
-
             if (e.key === 'Escape') closeLightbox();
             if (e.key === 'ArrowLeft') changeImage(-1);
             if (e.key === 'ArrowRight') changeImage(1);

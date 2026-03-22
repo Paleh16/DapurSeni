@@ -2,7 +2,7 @@
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Profil & Pengurus - Dapur Seni FST UIN Jakarta</title>
     
     <link rel="icon" type="image/png" href="LOGO DS FIX.png">
@@ -24,11 +24,11 @@
         }
     </script>
 </head>
-<body class="bg-[#FCF8F1] text-gray-800 font-sans antialiased overflow-x-hidden">
+<body class="bg-[#FCF8F1] text-gray-800 font-sans antialiased overflow-x-hidden w-full relative">
 
     <header class="pointer-events-none">
         <div class="fixed top-6 left-6 z-40 pointer-events-auto">
-            <a href="#home" class="flex items-center gap-3 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all border border-gray-100">
+            <a href="index.html" class="flex items-center gap-3 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all border border-gray-100">
                 <img src="LOGO DS FIX.png" alt="Logo Dapur Seni" class="h-8 rounded-full">
                 <div class="flex font-bold lowercase leading-none tracking-tight">
                     <span class="text-red-600 text-sm">dapur</span><span class="text-blue-600 text-sm">seni</span>
@@ -37,48 +37,48 @@
         </div>
 
         <nav class="hidden md:flex pointer-events-auto fixed top-6 left-1/2 -translate-x-1/2 z-40 bg-white/90 backdrop-blur-md shadow-xl border border-gray-100 px-8 py-3 rounded-full items-center gap-10 transition-all">
-            <a href="#home" class="group relative text-dsMustard transition-all hover:scale-110">
+            <a href="index.html" class="group relative text-gray-400 hover:text-dsMustard transition-all hover:scale-110">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                 <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Beranda</span>
             </a>
-            <a href="profil.html" class="group relative text-gray-400 hover:text-dsMaroon transition-all hover:scale-110">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <a href="profil.html" class="group relative text-dsMaroon transition-all scale-110">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.601a8.983 8.983 0 013.361-6.866 8.281 8.281 0 003 2.48z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"></path></svg>
                 <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Profil</span>
             </a>
             <a href="Art_Gallery.html" class="group relative text-gray-400 hover:text-dsTeal transition-all hover:scale-110">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg>
-                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity w-max">Divisi & Galeri</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity w-max whitespace-nowrap">Divisi & Galeri</span>
             </a>
-            <a href="#kontak" class="group relative text-gray-400 hover:text-dsMaroon transition-all hover:scale-110">
+            <a href="index.html#kontak" class="group relative text-gray-400 hover:text-dsMaroon transition-all hover:scale-110">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                 <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-dsDark text-white text-[10px] font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Kontak</span>
             </a>
         </nav>
 
-        <nav class="md:hidden pointer-events-auto fixed bottom-6 left-6 right-6 z-40 bg-white/90 backdrop-blur-md shadow-2xl border border-gray-100 px-6 py-4 rounded-3xl flex justify-between items-center">
-            <a href="#home" class="text-dsMustard"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></a>
-            <a href="profil.html" class="text-gray-400 hover:text-dsMaroon"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></a>
-            <a href="Art_Gallery.html" class="text-gray-400 hover:text-dsTeal"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg></a>
-            <a href="#kontak" class="text-gray-400 hover:text-dsMaroon"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></a>
+        <nav class="md:hidden pointer-events-auto fixed bottom-6 left-4 right-4 z-40 bg-white/90 backdrop-blur-md shadow-2xl border border-gray-100 px-8 py-5 rounded-[2rem] flex justify-between items-center">
+            <a href="index.html" class="text-gray-400 hover:text-dsMustard hover:scale-110 transition-transform"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></a>
+            <a href="profil.html" class="text-dsMaroon hover:scale-110 transition-transform"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.601a8.983 8.983 0 013.361-6.866 8.281 8.281 0 003 2.48z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"></path></svg></a>
+            <a href="Art_Gallery.html" class="text-gray-400 hover:text-dsTeal hover:scale-110 transition-transform"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg></a>
+            <a href="index.html#kontak" class="text-gray-400 hover:text-dsMaroon hover:scale-110 transition-transform"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></a>
         </nav>
     </header>
 
     <main>
-        <section id="about" class="py-24 px-6 max-w-7xl mx-auto scroll-mt-24">
+        <section id="about" class="pt-32 pb-16 px-6 max-w-7xl mx-auto scroll-mt-24">
             <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
                 <div data-aos="fade-right" class="w-full md:w-1/2">
                     <span class="text-dsMustard font-bold tracking-widest uppercase text-sm mb-2 block">Sejak 2004</span>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900 leading-tight">Dapur Seni: Tempat <span class="text-dsMaroon">Eksperimen</span> & <span class="text-dsTeal">Ekspresi</span></h2>
-                    <p class="text-gray-600 mb-4 leading-relaxed">Lahir di tengah hiruk pikuk laboratorium dan logika Fakultas Sains dan Teknologi UIN Jakarta, <strong>Dapur Seni</strong> hadir sebagai penyeimbang. Kami bukan sekadar organisasi, melainkan sebuah "dapur" tempat segala bentuk kreativitas diracik, diolah, dan disajikan.</p>
-                    <p class="text-gray-600 mb-8 leading-relaxed">Lebih dari dua dekade, kami telah melahirkan ribuan karya dan ratusan seniman yang percaya bahwa teknologi tanpa sentuhan seni adalah jiwa yang kehilangan warnanya.</p>
-                    <div class="flex gap-8 border-t border-gray-200 pt-8">
-                        <div data-aos="fade-up" data-aos-delay="100"><span class="block text-3xl font-black text-gray-900">20+</span><span class="text-sm text-gray-500 font-medium">Tahun Berkarya</span></div>
-                        <div data-aos="fade-up" data-aos-delay="200"><span class="block text-3xl font-black text-gray-900">5</span><span class="text-sm text-gray-500 font-medium">Divisi Seni</span></div>
-                        <div data-aos="fade-up" data-aos-delay="300"><span class="block text-3xl font-black text-gray-900">1k+</span><span class="text-sm text-gray-500 font-medium">Karya Tercipta</span></div>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">Dapur Seni: Tempat <span class="text-dsMaroon">Eksperimen</span> & <span class="text-dsTeal">Ekspresi</span></h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed md:text-lg">Lahir di tengah hiruk pikuk laboratorium dan logika Fakultas Sains dan Teknologi UIN Jakarta, <strong>Dapur Seni</strong> hadir sebagai penyeimbang. Kami bukan sekadar organisasi, melainkan sebuah "dapur" tempat segala bentuk kreativitas diracik, diolah, dan disajikan.</p>
+                    <p class="text-gray-600 mb-8 leading-relaxed md:text-lg">Lebih dari dua dekade, kami telah melahirkan ribuan karya dan ratusan seniman yang percaya bahwa teknologi tanpa sentuhan seni adalah jiwa yang kehilangan warnanya.</p>
+                    <div class="flex flex-wrap gap-8 border-t border-gray-200 pt-8">
+                        <div data-aos="fade-up" data-aos-delay="100"><span class="block text-3xl font-black text-gray-900">20+</span><span class="text-xs text-gray-500 font-bold uppercase tracking-widest">Tahun</span></div>
+                        <div data-aos="fade-up" data-aos-delay="200"><span class="block text-3xl font-black text-gray-900">5</span><span class="text-xs text-gray-500 font-bold uppercase tracking-widest">Divisi</span></div>
+                        <div data-aos="fade-up" data-aos-delay="300"><span class="block text-3xl font-black text-gray-900">1k+</span><span class="text-xs text-gray-500 font-bold uppercase tracking-widest">Karya</span></div>
                     </div>
                 </div>
                <div data-aos="fade-left" class="w-full md:w-1/2 flex justify-center mt-10 md:mt-0">
-                    <div class="relative w-full max-w-sm lg:max-w-md">
+                    <div class="relative w-full max-w-[280px] md:max-w-md">
                         <div class="absolute inset-0 bg-dsMustard rounded-3xl translate-x-4 translate-y-4"></div>
                         <img src="LOGO DS FIX.png" alt="Ilustrasi Dapur Seni" class="relative z-10 rounded-3xl w-full h-auto object-contain bg-white shadow-xl border-4 border-white">
                         <div class="absolute -bottom-4 -left-4 z-20 bg-dsMaroon text-white font-bold py-2 px-5 md:py-3 md:px-6 rounded-xl -rotate-6 shadow-lg text-sm md:text-base">Est. 2004</div>
@@ -87,7 +87,7 @@
             </div>
         </section>
 
-        <section id="pengurus" class="py-24 px-6 max-w-7xl mx-auto scroll-mt-24">
+        <section id="pengurus" class="py-16 px-6 max-w-7xl mx-auto scroll-mt-24 border-t-2 border-gray-100">
             <div data-aos="fade-up" class="text-center mb-16">
                 <span class="text-dsMaroon font-bold tracking-widest uppercase text-sm mb-2 block">Struktur Organisasi</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pengurus Aktif 2026</h2>
@@ -96,30 +96,32 @@
 
             <div class="mb-20">
                 <h3 id="bph" data-aos="zoom-in" class="text-2xl font-bold text-center text-dsTeal mb-10 inline-block w-full scroll-mt-28">Badan Pengurus Harian<span class="block w-16 h-1 bg-dsMustard mx-auto mt-3"></span></h3>
-                <div class="flex flex-wrap justify-center gap-8 mb-8">
-                    <div onclick="openModal(this)" data-name="Daffa Muhammad T." data-role="Ketua Umum" data-color="bg-dsMaroon" data-skills="Manajemen Event, Leadership, Public Speaking" data-motto="Terus bergerak berkarya atau tergilas oleh zaman." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group">
+                
+                <div class="flex flex-wrap justify-center gap-6 md:gap-8 mb-6 md:mb-8">
+                    <div onclick="openModal(this)" data-name="Daffa Muhammad T." data-role="Ketua Umum" data-color="bg-dsMaroon" data-skills="Manajemen Event, Leadership, Public Speaking" data-motto="Terus bergerak berkarya atau tergilas oleh zaman." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                         <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23b0b0b0%22><path d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/></svg>')] bg-[length:50%] bg-no-repeat bg-center"></div>
                         <h4 class="font-bold text-gray-900 mb-2">Daffa Muhammad T.</h4><span class="bg-dsMaroon text-white px-4 py-1 rounded-full text-xs font-bold">Ketua Umum</span>
                     </div>
-                    <div onclick="openModal(this)" data-name="Farrel Tryardan K." data-role="Wakil Ketua" data-color="bg-dsTeal" data-skills="Sistem Informasi, Web Development, Musik" data-motto="Logika koding dan keindahan seni harus selalu berjalan seimbang." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group">
+                    <div onclick="openModal(this)" data-name="Farrel Tryardan K." data-role="Wakil Ketua" data-color="bg-dsTeal" data-skills="Sistem Informasi, Web Development, Musik" data-motto="Logika koding dan keindahan seni harus selalu berjalan seimbang." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                         <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23b0b0b0%22><path d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/></svg>')] bg-[length:50%] bg-no-repeat bg-center"></div>
                         <h4 class="font-bold text-gray-900 mb-2">Farrel Tryardan K.</h4><span class="bg-dsTeal text-white px-4 py-1 rounded-full text-xs font-bold">Wakil Ketua</span>
                     </div>
                 </div>
-                <div class="flex flex-wrap justify-center gap-8">
-                    <div onclick="openModal(this)" data-name="Diah Ayu Kamila" data-role="Sekretaris 1" data-color="bg-gray-500" data-skills="Administrasi, Copywriting" data-motto="Tertib administrasi adalah kunci kesuksesan organisasi." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group">
+
+                <div class="flex flex-wrap justify-center gap-6 md:gap-8">
+                    <div onclick="openModal(this)" data-name="Diah Ayu Kamila" data-role="Sekretaris 1" data-color="bg-gray-500" data-skills="Administrasi, Copywriting" data-motto="Tertib administrasi adalah kunci kesuksesan organisasi." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                         <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23b0b0b0%22><path d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/></svg>')] bg-[length:50%] bg-no-repeat bg-center"></div>
                         <h4 class="font-bold text-gray-900 mb-2">Diah Ayu Kamila</h4><span class="bg-gray-500 text-white px-4 py-1 rounded-full text-xs font-bold">Sekretaris 1</span>
                     </div>
-                    <div onclick="openModal(this)" data-name="Belinda Rosalina" data-role="Sekretaris 2" data-color="bg-gray-500" data-skills="Pengarsipan, Komunikasi" data-motto="Merapikan yang berserakan, mencatat yang terlupakan." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group">
+                    <div onclick="openModal(this)" data-name="Belinda Rosalina" data-role="Sekretaris 2" data-color="bg-gray-500" data-skills="Pengarsipan, Komunikasi" data-motto="Merapikan yang berserakan, mencatat yang terlupakan." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                         <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23b0b0b0%22><path d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/></svg>')] bg-[length:50%] bg-no-repeat bg-center"></div>
                         <h4 class="font-bold text-gray-900 mb-2">Belinda Rosalina</h4><span class="bg-gray-500 text-white px-4 py-1 rounded-full text-xs font-bold">Sekretaris 2</span>
                     </div>
-                    <div onclick="openModal(this)" data-name="Silva Amelia" data-role="Bendahara 1" data-color="bg-gray-500" data-skills="Manajemen Keuangan, Akuntansi" data-motto="Keuangan sehat, organisasi melesat." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group">
+                    <div onclick="openModal(this)" data-name="Silva Amelia" data-role="Bendahara 1" data-color="bg-gray-500" data-skills="Manajemen Keuangan, Akuntansi" data-motto="Keuangan sehat, organisasi melesat." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                         <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23b0b0b0%22><path d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/></svg>')] bg-[length:50%] bg-no-repeat bg-center"></div>
                         <h4 class="font-bold text-gray-900 mb-2">Silva Amelia</h4><span class="bg-gray-500 text-white px-4 py-1 rounded-full text-xs font-bold">Bendahara 1</span>
                     </div>
-                    <div onclick="openModal(this)" data-name="Trisha Balqis S." data-role="Bendahara 2" data-color="bg-gray-500" data-skills="Fundraising, Bisnis" data-motto="Mencari dana dengan cara yang kreatif dan halal." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group">
+                    <div onclick="openModal(this)" data-name="Trisha Balqis S." data-role="Bendahara 2" data-color="bg-gray-500" data-skills="Fundraising, Bisnis" data-motto="Mencari dana dengan cara yang kreatif dan halal." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                         <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23b0b0b0%22><path d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/></svg>')] bg-[length:50%] bg-no-repeat bg-center"></div>
                         <h4 class="font-bold text-gray-900 mb-2">Trisha Balqis S.</h4><span class="bg-gray-500 text-white px-4 py-1 rounded-full text-xs font-bold">Bendahara 2</span>
                     </div>
@@ -130,74 +132,84 @@
                 <h3 data-aos="zoom-in" class="text-2xl font-bold text-center text-dsTeal mb-10 inline-block w-full">Kepala & Anggota Divisi<span class="block w-16 h-1 bg-dsMustard mx-auto mt-3"></span></h3>
                 
                 <div class="flex flex-col gap-12">
-                    <div data-aos="fade-up" class="bg-white p-8 rounded-3xl shadow-sm border-t-4 border-dsMustard">
+                    <div data-aos="fade-up" class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border-t-4 border-dsMustard">
                         <h4 id="musik" class="text-xl font-bold text-center mb-8 uppercase tracking-widest text-gray-800 scroll-mt-28">Dapur Musik</h4>
-                        <div class="flex flex-wrap justify-center gap-8">
-                            <div onclick="openModal(this)" data-name="Luvita Emillatansa" data-role="Ketua Divisi Musik" data-color="bg-dsMustard" data-skills="Vokal, Aransemen Musik" data-motto="Bernyanyilah seakan tiada yang mendengar." class="bg-gray-50 p-8 rounded-3xl shadow-inner hover:shadow-lg hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                        <div class="flex flex-wrap justify-center gap-6 md:gap-8">
+                            <div onclick="openModal(this)" data-name="Luvita Emillatansa" data-role="Ketua Divisi Musik" data-color="bg-dsMustard" data-skills="Vokal, Aransemen Musik" data-motto="Bernyanyilah seakan tiada yang mendengar." class="bg-gray-50 p-8 rounded-3xl shadow-inner hover:shadow-lg hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-200">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23b0b0b0%22><path d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/></svg>')] bg-[length:50%] bg-no-repeat bg-center"></div>
                                 <h4 class="font-bold text-gray-900 mb-2">Luvita Emillatansa</h4><span class="bg-dsMustard text-white px-4 py-1 rounded-full text-xs font-bold">Ketua Divisi</span>
                             </div>
-                            <div onclick="openModal(this)" data-name="Aulentia A." data-role="Anggota Musik" data-skills="Instrumen, Teori Musik" data-motto="Nada bicara lebih keras dari kata." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                            <div onclick="openModal(this)" data-name="Aulentia A." data-role="Anggota Musik" data-skills="Instrumen, Teori Musik" data-motto="Nada bicara lebih keras dari kata." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Aulentia A.</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span>
                             </div>
-                            <div onclick="openModal(this)" data-name="Henis Sutiono" data-role="Anggota Musik" data-skills="Gitar, Bass" data-motto="Petik gitar, tenangkan hati." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                            <div onclick="openModal(this)" data-name="Henis Sutiono" data-role="Anggota Musik" data-skills="Gitar, Bass" data-motto="Petik gitar, tenangkan hati." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Henis Sotiono</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span>
                             </div>
-                            <div onclick="openModal(this)" data-name="Nur Diana" data-role="Anggota Musik" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                            <div onclick="openModal(this)" data-name="Nur Diana" data-role="Anggota Musik" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Nur Diana</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span>
                             </div>
-                            <div onclick="openModal(this)" data-name="Juliandito Tri" data-role="Anggota Musik" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                            <div onclick="openModal(this)" data-name="Juliandito Tri" data-role="Anggota Musik" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Juliandito Tri</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span>
                             </div>
-                            <div onclick="openModal(this)" data-name="Amanda S." data-role="Anggota Musik" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                            <div onclick="openModal(this)" data-name="Amanda S." data-role="Anggota Musik" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Amanda S.</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span>
                             </div>
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" class="bg-white p-8 rounded-3xl shadow-sm border-t-4 border-dsMaroon">
+                    <div data-aos="fade-up" class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border-t-4 border-dsMaroon">
                         <h4 id="desain" class="text-xl font-bold text-center mb-8 uppercase tracking-widest text-gray-800 scroll-mt-28">Dapur Desain</h4>
-                        <div class="flex flex-wrap justify-center gap-8">
-                            <div onclick="openModal(this)" data-name="Dimas Ahmad R." data-role="Ketua Divisi Desain" data-color="bg-dsMaroon" data-skills="Desain Grafis, Digital Imaging" data-motto="Mewarnai dunia satu piksel setiap saat." class="bg-gray-50 p-8 rounded-3xl shadow-inner hover:shadow-lg hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                        <div class="flex flex-wrap justify-center gap-6 md:gap-8">
+                            <div onclick="openModal(this)" data-name="Dimas Ahmad R." data-role="Ketua Divisi Desain" data-color="bg-dsMaroon" data-skills="Desain Grafis, Digital Imaging" data-motto="Mewarnai dunia satu piksel setiap saat." class="bg-gray-50 p-8 rounded-3xl shadow-inner hover:shadow-lg hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-200">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23b0b0b0%22><path d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/></svg>')] bg-[length:50%] bg-no-repeat bg-center"></div>
                                 <h4 class="font-bold text-gray-900 mb-2">Dimas Ahmad R.</h4><span class="bg-dsMaroon text-white px-4 py-1 rounded-full text-xs font-bold">Ketua Divisi</span>
                             </div>
-                            <div onclick="openModal(this)" data-name="Arssa Nur Y." data-role="Anggota Desain" data-skills="Ilustrasi, Tipografi" data-motto="Gambar adalah puisi tanpa kata." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                            <div onclick="openModal(this)" data-name="Arssa Nur Y." data-role="Anggota Desain" data-skills="Ilustrasi, Tipografi" data-motto="Gambar adalah puisi tanpa kata." class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Arssa Nur Y.</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span>
                             </div>
-                            <div onclick="openModal(this)" data-name="Jihaan A." data-role="Anggota Desain" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100"><div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Jihaan A.</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span></div>
-                            <div onclick="openModal(this)" data-name="Zakiyyah R." data-role="Anggota Desain" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100"><div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Zakiyyah R.</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span></div>
-                            <div onclick="openModal(this)" data-name="Zakiyyatus S." data-role="Anggota Desain" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100"><div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Zakiyyatus S.</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span></div>
-                            <div onclick="openModal(this)" data-name="Alifiah R." data-role="Anggota Desain" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100"><div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Alifiah R.</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span></div>
-                            <div onclick="openModal(this)" data-name="Rafa Zahira" data-role="Anggota Desain" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100"><div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Rafa Zahira</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span></div>
-                            <div onclick="openModal(this)" data-name="Rakha Zhafran" data-role="Anggota Desain" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100"><div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Rakha Zhafran</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span></div>
+                            <div onclick="openModal(this)" data-name="Jihaan A." data-role="Anggota Desain" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100"><div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Jihaan A.</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span></div>
+                            <div onclick="openModal(this)" data-name="Zakiyyah R." data-role="Anggota Desain" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100"><div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Zakiyyah R.</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span></div>
+                            <div onclick="openModal(this)" data-name="Zakiyyatus S." data-role="Anggota Desain" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100"><div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Zakiyyatus S.</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span></div>
+                            <div onclick="openModal(this)" data-name="Alifiah R." data-role="Anggota Desain" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100"><div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Alifiah R.</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span></div>
+                            <div onclick="openModal(this)" data-name="Rafa Zahira" data-role="Anggota Desain" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100"><div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Rafa Zahira</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span></div>
+                            <div onclick="openModal(this)" data-name="Rakha Zhafran" data-role="Anggota Desain" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100"><div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Rakha Zhafran</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span></div>
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" class="bg-white p-8 rounded-3xl shadow-sm border-t-4 border-dsTeal">
+                    <div data-aos="fade-up" class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border-t-4 border-dsTeal">
                         <h4 id="sinematografi" class="text-xl font-bold text-center mb-8 uppercase tracking-widest text-gray-800 scroll-mt-28">Sinematografi</h4>
-                        <div class="flex flex-wrap justify-center gap-8">
-                            <div onclick="openModal(this)" data-name="Syarifah Aflia" data-role="Ketua Sinematografi" data-color="bg-dsTeal" data-skills="Video Editing, Directing" data-motto="Setiap frame adalah cerita yang berharga." class="bg-gray-50 p-8 rounded-3xl shadow-inner hover:shadow-lg hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                        <div class="flex flex-wrap justify-center gap-6 md:gap-8">
+                            <div onclick="openModal(this)" data-name="Syarifah Aflia" data-role="Ketua Sinematografi" data-color="bg-dsTeal" data-skills="Video Editing, Directing" data-motto="Setiap frame adalah cerita yang berharga." class="bg-gray-50 p-8 rounded-3xl shadow-inner hover:shadow-lg hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-200">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23b0b0b0%22><path d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/></svg>')] bg-[length:50%] bg-no-repeat bg-center"></div>
                                 <h4 class="font-bold text-gray-900 mb-2">Syarifah Aflia</h4><span class="bg-dsTeal text-white px-4 py-1 rounded-full text-xs font-bold">Ketua Divisi</span>
                             </div>
-                            <div onclick="openModal(this)" data-name="Razy Al Farizy" data-role="Anggota Sinema" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                            <div onclick="openModal(this)" data-name="Razy Al Farizy" data-role="Anggota Sinema" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Razy Al Farizy</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span>
                             </div>
                         </div>
                     </div>
+                    
+                    <div data-aos="fade-up" class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border-t-4 border-gray-400">
+                        <h4 id="labstudio" class="text-xl font-bold text-center mb-8 uppercase tracking-widest text-gray-800 scroll-mt-28">Labstudio</h4>
+                        <div class="flex flex-wrap justify-center gap-6 md:gap-8">
+                            <div onclick="openModal(this)" data-name="Daffa Maulana" data-role="Ketua Labstudio" data-color="bg-gray-500" data-skills="Audio Engineering, Lighting" data-motto="Mengatur cahaya, menjernihkan suara." class="bg-gray-50 p-8 rounded-3xl shadow-inner hover:shadow-lg hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-200">
+                                <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23b0b0b0%22><path d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/></svg>')] bg-[length:50%] bg-no-repeat bg-center"></div>
+                                <h4 class="font-bold text-gray-900 mb-2">Daffa Maulana</h4><span class="bg-gray-500 text-white px-4 py-1 rounded-full text-xs font-bold">Ketua Divisi</span>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div data-aos="fade-up" class="bg-white p-8 rounded-3xl shadow-sm border-t-4 border-gray-800">
+                    <div data-aos="fade-up" class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border-t-4 border-gray-800">
                         <h4 id="manajemen" class="text-xl font-bold text-center mb-8 uppercase tracking-widest text-gray-800 scroll-mt-28">Manajemen</h4>
-                        <div class="flex flex-wrap justify-center gap-8">
-                            <div onclick="openModal(this)" data-name="Dian Rahmawati" data-role="Ketua Manajemen" data-color="bg-gray-800" data-skills="Manajemen SDM, Planning" data-motto="Terstruktur di belakang layar, memukau di atas panggung." class="bg-gray-50 p-8 rounded-3xl shadow-inner hover:shadow-lg hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                        <div class="flex flex-wrap justify-center gap-6 md:gap-8">
+                            <div onclick="openModal(this)" data-name="Dian Rahmawati" data-role="Ketua Manajemen" data-color="bg-gray-800" data-skills="Manajemen SDM, Planning" data-motto="Terstruktur di belakang layar, memukau di atas panggung." class="bg-gray-50 p-8 rounded-3xl shadow-inner hover:shadow-lg hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-200">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23b0b0b0%22><path d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/></svg>')] bg-[length:50%] bg-no-repeat bg-center"></div>
                                 <h4 class="font-bold text-gray-900 mb-2">Dian Rahmawati</h4><span class="bg-gray-800 text-white px-4 py-1 rounded-full text-xs font-bold">Ketua Divisi</span>
                             </div>
-                            <div onclick="openModal(this)" data-name="Dini Azzahra" data-role="Anggota Manajemen" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                            <div onclick="openModal(this)" data-name="Dini Azzahra" data-role="Anggota Manajemen" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Dini Azzahra</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span>
                             </div>
-                            <div onclick="openModal(this)" data-name="Jihan Fauziah" data-role="Anggota Manajemen" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-64 flex flex-col items-center text-center group border border-gray-100">
+                            <div onclick="openModal(this)" data-name="Jihan Fauziah" data-role="Anggota Manajemen" class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md hover:-translate-y-2 cursor-pointer transition-all w-[85vw] sm:w-64 flex flex-col items-center text-center group border border-gray-100">
                                 <div class="w-24 h-24 bg-gray-200 rounded-full mb-4 border-4 border-white shadow-md group-hover:scale-110 transition-transform"></div><h4 class="font-bold text-gray-900 mb-2">Jihan Fauziah</h4><span class="bg-gray-400 text-white px-4 py-1 rounded-full text-xs font-bold">Anggota</span>
                             </div>
                         </div>
@@ -214,7 +226,7 @@
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                 </button>
                 
-                <div class="w-full h-64 sm:h-72 bg-gray-100 flex-shrink-0">
+                <div class="w-full h-56 sm:h-64 bg-gray-100 flex-shrink-0">
                     <img id="modal-img" src="" alt="Foto Pengurus" class="w-full h-full object-cover object-center">
                 </div>
                 
@@ -237,12 +249,12 @@
         </div>
     </main>
 
-    <footer data-aos="fade-up" class="bg-dsDark text-white py-12 text-center border-t-4 border-dsMustard">
+    <footer data-aos="fade-up" class="bg-dsDark text-white py-12 text-center border-t-4 border-dsMustard pb-24 md:pb-12">
         <div class="max-w-4xl mx-auto px-6 flex flex-col items-center">
             <img src="LOGO DS FIX.png" alt="Logo Dapur Seni" class="h-16 mb-6 brightness-0 invert opacity-80 drop-shadow-md">
-            <h2 class="text-2xl font-bold mb-2">Dapur Seni FST</h2>
-            <p class="text-gray-400 text-sm mb-8">Wadah kreativitas mahasiswa FST UIN Jakarta.</p>
-            <div class="w-full border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between text-xs text-gray-500">
+            <h2 class="text-2xl font-bold mb-2 leading-none whitespace-nowrap">Dapur Seni FST</h2>
+            <p class="text-gray-400 text-sm mb-8 leading-relaxed">Wadah kreativitas mahasiswa FST UIN Jakarta.</p>
+            <div class="w-full border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between text-xs text-gray-500 gap-2">
                 <p>&copy; 2026 Dapur Seni FST UIN Jakarta.</p>
                 <p>Designed with passion using Tailwind CSS.</p>
             </div>
@@ -253,7 +265,6 @@
     <script>
         AOS.init({ duration: 800, once: true, offset: 50 });
 
-        /* SCRIPT MODAL PENGURUS TETAP ADA */
         const modal = document.getElementById('pengurus-modal');
         const modalContent = document.getElementById('modal-content');
 
@@ -277,6 +288,7 @@
             document.getElementById('modal-motto').textContent = `"${motto}"`;
 
             modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // cegah scroll web saat modal kebuka
             setTimeout(() => {
                 modal.classList.remove('opacity-0');
                 modalContent.classList.remove('scale-95');
@@ -286,6 +298,7 @@
         function closeModal() {
             modal.classList.add('opacity-0');
             modalContent.classList.add('scale-95');
+            document.body.style.overflow = '';
             setTimeout(() => { modal.classList.add('hidden'); }, 300);
         }
     </script>
